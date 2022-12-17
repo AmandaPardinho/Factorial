@@ -3,6 +3,15 @@ package factorial;
 import java.util.Scanner;
 
 public class Factorial1 {
+
+    private static int firstFactorial(int num) {
+
+        if(num <= 1){
+            return 1;
+        }
+        return num * firstFactorial(num - 1);
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -12,15 +21,8 @@ public class Factorial1 {
                 the input will always be an integer.
                 """);
 
-        int num;
-        int firstFactorial = 1;
-
         System.out.println("Enter a number:");
-        num = scanner.nextInt();
 
-        if(num <= 1){
-            return 1;
-        }
-       
+        System.out.print(firstFactorial(scanner.nextInt()));
     }
 }
