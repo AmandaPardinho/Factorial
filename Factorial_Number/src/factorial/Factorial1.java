@@ -24,5 +24,7 @@ public class Factorial1 {
         System.out.println("Enter a number:");
 
         System.out.print(firstFactorial(scanner.nextInt()));
+
+        scanner.close();
     }
 }
