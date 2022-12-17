@@ -7,13 +7,12 @@ public class Factorial2 {
 
 
         int i = 0;
-        int factorial;
-
-        if(i <= 1){
-            factorial = 1;
-        }
-
-        while(i > 0 && i <= 10){
+        int factorial = 0;
+        
+        while(i >= 0 && i <= 10){
+            if(i <= 1){
+                factorial = 1;
+            }
             factorial *= i;
             i++;
         }
